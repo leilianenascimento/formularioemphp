@@ -8,7 +8,7 @@
 <body>
      <div>
         <?php
-        $nome = isset($_GET["nome"])?$_GET["nome"]:"[Não informado]";
+        $nome = isset($_GET["nome"])?$_GET["nome"]:"[Não informado]"; //isset significa que a variavel foi configurada, e não irá apresentar erro na url
         $ano = isset( $_GET["ano"])? $_GET["ano"]: 0;
         $sexo = isset($_GET["sexo"])? $_GET["sexo"]:"[Sem Sexo]";
         $idade = date ("Y") - $ano;
